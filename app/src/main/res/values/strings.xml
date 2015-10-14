@@ -100,7 +100,6 @@
     <!-- Toast shown when text is copied to the clipboard. -->
     <string name="text_copied_toast">Text copied.</string>
 
-    // new
 
     <!--Content descriptions for accessibility. These strings will be read aloud to users who are using the calculator with
     accessibility features enabled and should reflect the mathematical concept instead of a direct representation of what is shown
@@ -190,7 +189,6 @@
         <item>equals</item>
     </string-array>
 
-    //new
 
 
     <string name="square_root_symbol">"√¯¯"</string>

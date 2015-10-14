@@ -113,7 +113,7 @@
         <item name="menu_bg">@drawable/menu_bg</item>
         <item name="calc_clear_symbol">@drawable/calc_clear_symbol</item>
     </style>
-    
+
     <style name="Theme.Calculator.Light" parent="android:Theme.Material.NoActionBar">
         <!-- enable window content transitions -->
         <item name="android:windowContentTransitions">true</item>
@@ -154,7 +154,7 @@
         <item name="menu_bg">@drawable/menu_bg_light</item>
         <item name="calc_clear_symbol">@drawable/calc_clear_symbol_light</item>
     </style>
-    
+
     <style name="Theme.Settings.Calculator" parent="android:Theme.Material">
         <!-- enable window content transitions -->
         <item name="android:windowContentTransitions">true</item>
@@ -171,12 +171,12 @@
         <item name="android:colorPrimaryDark">#263238</item>
         <item name="android:colorPrimary">#37474F</item>
     </style>
-    
+
     <style name="Theme.Settings.Calculator.Light" parent="android:Theme.Material">
         <item name="android:colorPrimaryDark">#263238</item>
         <item name="android:colorPrimary">#37474F</item>
     </style>
-    
+
     <style name="Theme.Calculator.ButtonStyle" >
        <item name="android:textSize">40sp</item>
        <item name="android:layout_width">match_parent</item>
@@ -190,7 +190,7 @@
        <item name="android:textColorHint">@color/button_hint_text</item>
        <item name="android:gravity">center</item>
     </style>
-    
+
     <style name="Theme.Calculator.ButtonStyle.Light" >
        <item name="android:background">@drawable/btn_function_light</item>
        <item name="android:textColor">@color/text_color_light</item>
@@ -208,7 +208,6 @@
         <item name="android:fontFamily">sans-serif-thin"</item>
     </style>
 
-// main
     <style name="Theme.Calculator.ButtonStyle.Adv" >
         <item name="android:background">@drawable/btn_digit_adv</item>
         <item name="android:fontFamily">sans-serif-thin"</item>
@@ -218,12 +217,11 @@
         <item name="android:background">@drawable/btn_digit_adv_light</item>
         <item name="android:fontFamily">sans-serif-thin"</item>
     </style>
-    // end main
 
     <style name="Theme.Calculator.ButtonStyle.Small" >
        <item name="android:textSize">30sp</item>
     </style>
-    
+
     <style name="Theme.Calculator.ButtonStyle.Light.Small" >
        <item name="android:textSize">30sp</item>
     </style>
@@ -232,7 +230,7 @@
        <item name="android:textSize">25sp</item>
        <item name="android:background">@drawable/btn_digit_adv</item>
     </style>
-    
+
     <style name="Theme.Calculator.ButtonStyle.Light.Half" >
        <item name="android:textSize">25sp</item>
         <item name="android:textColor">#ffffff</item>
@@ -380,8 +378,6 @@
        <item name="android:textSize">@dimen/btn_clear_text_size</item>
     </style>
 
-    // Google
-
     <style name="button_style">
         <item name="android:textSize">40dp</item>
         <item name="android:layout_width">match_parent</item>
@@ -481,7 +477,6 @@
 
     </style>
 
-    // new
     <style name="AppTheme" parent="android:Theme.Holo.Light">
         <item name="android:buttonStyle">@style/Theme.AppTheme.Widget.Button</item>
         <item name="android:windowBackground">@color/history_result</item>

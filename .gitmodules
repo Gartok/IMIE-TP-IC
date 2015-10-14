@@ -1,0 +1,6 @@
+[submodule "app/libs/Slider"]
+	path = app/libs/Slider
+	url = https://github.com/Xlythe/Slider.git
+[submodule "app/libs/AChartEngine"]
+	path = app/libs/AChartEngine
+	url = https://github.com/jondwillis/AChartEngine.git

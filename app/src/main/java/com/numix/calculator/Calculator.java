@@ -16,50 +16,35 @@
 
 package com.numix.calculator;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityOptions;
-import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Point;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
-import android.view.Display;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
 import android.view.View.OnClickListener;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.view.animation.AccelerateInterpolator;
 import android.widget.AdapterView;
-import android.support.v4.widget.SlidingPaneLayout;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
-import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.PopupMenu;
 import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.analytics.GoogleAnalytics;
-import com.google.android.gms.analytics.Tracker;
-import com.numix.calculator.view.AdvancedDisplay;
 import com.numix.calculator.view.CalculatorDisplay;
 import com.numix.calculator.view.CalculatorViewPager;
 import com.numix.calculator.view.HistoryLine;
 import com.xlythe.slider.Slider;
-import com.xlythe.slider.Slider.Direction;
 
 public class Calculator extends Activity implements Logic.Listener, OnClickListener, OnMenuItemClickListener, CalculatorViewPager.OnPageChangeListener {
     public EventListener mListener = new EventListener();
@@ -78,8 +63,6 @@ public class Calculator extends Activity implements Logic.Listener, OnClickListe
     private Slider mPulldown;
     private Graph mGraph;
     EventListener  cls2= new EventListener();
-    public static GoogleAnalytics analytics;
-    public static Tracker tracker;
 
     int currentapiVersion = android.os.Build.VERSION.SDK_INT;
 
@@ -135,14 +118,6 @@ public class Calculator extends Activity implements Logic.Listener, OnClickListe
     @Override
     public void onCreate(Bundle state) {
         super.onCreate(state);
-
-        analytics = GoogleAnalytics.getInstance(this);
-        analytics.setLocalDispatchPeriod(1800);
-
-        tracker = analytics.newTracker("UA-63953479-3");
-        tracker.enableExceptionReporting(true);
-        tracker.enableAdvertisingIdCollection(true);
-        tracker.enableAutoActivityTracking(true);
 
         // Disable IME for this application
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM, WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
